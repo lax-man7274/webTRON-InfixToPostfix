@@ -1,18 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infix to Postfix</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" media="screen and (max-width:1325px)" href="./css/phone.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- <link rel="stylesheet" media="screen and (max-width:1325px)" href="./css/phone.css" /> -->
+    <title>Infix to Postfix</title>
 </head>
+
 <body>
-    <section id="container">
+    <header class="title">
+        <h1>INFIX TO POSTFIX CONVERTER</h1>
+    </header>
+    <main>
+        <form action="" class="form-1">
+            <div class="form-element">
+                <h2>INSERT YOUR EXPRESSION HERE:</h2>
+                <fieldset>
+                    <legend> Your Infix Expression </legend>
+                    <input type="text" required />
+                </fieldset>
+                <a href="#">Learn about infix expression.</a>
+            </div>
+            <div class="form-element">
+                <h2>SELECT SPLIT TYPE:</h2>
+                <fieldset>
+                    <legend> Split Type </legend>
+                    <select name="splitMethode" id="splitMethode" required>
+                        <option value=""></option>
+                        <option value="laxman">Laxman</option>
+                        <option value="Pokhrel">Pokhrel</option>
+                    </select>
+                   
+                </fieldset>
+                <a href="#">Learn about split type.</a>
+            </div>
+            <button type="submit">See your result</button>
+        </form>
+<div class="section-2">
+        <form action="" class="form-2">
+        <div class="form-element">
+            <h2>YOUR POSTFIX EXPRESSION IS:</h2>
+            <fieldset>
+                <legend> Your postfix expression: </legend>
+                <input type="text"/>
+                <img src="./img/copy-icon.png" alt="copy-icon">
+            </fieldset>
+            <a href="#">Learn about postfix expression.</a>
+        </div>
+    </form>
+    </main>
+    <footer class="footer">
+        <div class="logo">
+            <h2 id="heading-contact">Designed and Managed By:</h2>
+            <img id="webtron-img" src="./img/webTRON.png" alt="webTRON">
+        </div>
+        <div class="line"></div>
+        <div class="contact">
+            <p>Contact us for: </p>
+                <ul>
+                    <li class="features">E-Commerce website with mobile App</li>
+                    <li class="features">Search Engine Optamization</li>
+                    <li class="features">Digital Marketing</li>
+                    <li class="features">Full-Time Technical support and Advice by Experts</li>
+                </ul>
+        </div>
+        <div class="line"></div>
+        <div class="newsletter" >
+            <fieldset class="visitorEmail">
+                <legend>Subscribe to our News Letter</legend>
+                <form action="" >
+                    <input type="text" id="input-email">
+                    <button type="submit"><img src="./img/email-icon.png" alt="email-icon" id="email-icon"></button>
+                </form>
+            </fieldset>
+            <!-- <br><br> -->
+            <!-- <div id="chat">
+                <h2>Chat With Us:</h2>
+                <img src="./img/dashicons-format-chat.png" alt="">
+            </div> -->
+            
+            <div class="contact-details">
+                <p>Email:webtron2021@gmail.com</p>
+                <p>Phone:</p>
+                <ul>
+                    <li>9842473580</li>
+                    <li>9849667274</li>
+                    <li>9812951925</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+    <!-- <section id="container">
 
         <h1 id="primary-heading">INFIX TO POSTFIX CONVERTER</h1>
 
@@ -91,6 +182,7 @@
                 </div>
             </div>
         </footer>
-    </section>
-    </body>
-    </html>
+    </section> -->
+</body>
+
+</html>

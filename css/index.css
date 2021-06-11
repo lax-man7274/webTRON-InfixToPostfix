@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Comfortaa", cursive;
+}
+
+.title {
+  width: 100%;
+  min-height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #C50000;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.title h1 {
+  font-size: 3.5rem;
+  margin: 1rem;
+}
+
+main {
+  min-height: 60rem;
+}
+main .form-1 {
+  width: 100%;
+  height: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+main .form-1 button {
+  margin-left: 5rem;
+  background: none;
+  border: none;
+  width: 15rem;
+  height: 5rem;
+  padding: 1rem;
+  background: #133b69;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  color: #e4e4e4;
+}
+main .form-1 .form-element {
+  padding: 0.5rem;
+  margin-left: 5rem;
+  width: 90%;
+  min-height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+main .form-1 .form-element h2 {
+  font-size: 2.5rem;
+}
+main .form-1 .form-element a {
+  color: #0362D1;
+  font-size: 1.3rem;
+}
+main .form-1 .form-element fieldset {
+  width: 80%;
+  margin: 1rem 0rem 1rem 0rem;
+  height: 8rem;
+  border: 2px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+}
+main .form-1 .form-element fieldset legend {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+main .form-1 .form-element fieldset input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  padding: 2px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+main .form-1 .form-element fieldset input:active {
+  border: none;
+  background-color: none;
+  outline: none;
+}
+main .form-1 .form-element fieldset input:focus {
+  border: none;
+  outline: none;
+}
+main .form-1 .form-element fieldset select {
+  width: 99%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  padding: 2px;
+}
+main .section-2 {
+  height: 45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+main .form-2 {
+  margin-top: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+main .form-2 button {
+  margin-left: 5rem;
+  background: none;
+  border: none;
+  width: 15rem;
+  height: 5rem;
+  padding: 1rem;
+  background: #133b69;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  color: #e4e4e4;
+  cursor: pointer;
+}
+main .form-2 .form-element {
+  padding: 0.5rem;
+  margin-left: 5rem;
+  width: 90%;
+  min-height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+main .form-2 .form-element h2 {
+  font-size: 2.5rem;
+}
+main .form-2 .form-element a {
+  color: #0362D1;
+  font-size: 1.3rem;
+}
+main .form-2 .form-element fieldset {
+  width: 80%;
+  margin: 1rem 0rem 1rem 0rem;
+  height: 8rem;
+  border: 2px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+main .form-2 .form-element fieldset img {
+  width: 6.5rem;
+  height: 6.5rem;
+  cursor: pointer;
+}
+main .form-2 .form-element fieldset legend {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+main .form-2 .form-element fieldset input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  padding: 2px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+main .form-2 .form-element fieldset input:active {
+  border: none;
+  background-color: none;
+  outline: none;
+}
+main .form-2 .form-element fieldset input:focus {
+  border: none;
+  outline: none;
+}
+main .form-2 .form-element fieldset select {
+  width: 99%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  padding: 2px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+main .form-2 .form-element fieldset select:active {
+  border: none;
+  background-color: none;
+  outline: none;
+}
+main .form-2 .form-element fieldset select:focus {
+  border: none;
+  outline: none;
+}
+
+.footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #121212;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  color: #ececec;
+}
+.footer .line {
+  width: 2px;
+  height: 22rem;
+  background-color: #e4e4e4;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.footer .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.footer .logo h2 {
+  font-size: 2rem;
+}
+.footer .logo img {
+  width: 23rem;
+  height: 11rem;
+}
+.footer .contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 15rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.footer .contact p {
+  font-size: 2.5rem;
+}
+.footer .contact ul {
+  list-style: disc;
+  -webkit-transform: translateX(1.5rem);
+          transform: translateX(1.5rem);
+  font-size: 1.5rem;
+}
+.footer .newsletter {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 20rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.footer .newsletter fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7rem;
+  width: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.footer .newsletter fieldset legend {
+  padding: 5px;
+}
+.footer .newsletter fieldset form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .newsletter fieldset form input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  fill: black;
+  margin: 0rem 0.5rem 0rem 1rem;
+}
+.footer .newsletter fieldset form input:active {
+  border: none;
+  background-color: none;
+  outline: none;
+}
+.footer .newsletter fieldset form input:focus {
+  border: none;
+  outline: none;
+}
+.footer .newsletter fieldset form button {
+  border: none;
+  padding: 1rem;
+  background: none;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  color: #e4e4e4;
+  cursor: pointer;
+}
+.footer .newsletter fieldset form button img {
+  width: 4rem;
+  height: 4rem;
+}
+.footer .newsletter fieldset form button:active {
+  border: none;
+  background-color: none;
+  outline: none;
+}
+.footer .newsletter fieldset form button:focus {
+  border: none;
+  outline: none;
+}
+.footer .newsletter .contact-details {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer .newsletter .contact-details p {
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 1.5rem;
+}
+.footer .newsletter .contact-details ul {
+  -webkit-transform: translateX(1.5rem);
+          transform: translateX(1.5rem);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .line {
+    height: 2px;
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    margin: 3rem 0rem 3rem 0rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 40rem;
+  }
+  .footer .logo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 40rem;
+  }
+  .footer .contact {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 40rem;
+  }
+  .footer .newsletter {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 40rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: bold;
+  }
+
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .line {
+    height: 2px;
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    margin: 3rem 0rem 3rem 0rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 25rem;
+  }
+  .footer .logo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 25rem;
+  }
+  .footer .contact {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 20rem;
+  }
+  .footer .newsletter {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 20rem;
+  }
+
+  main .form-1 .form-element h2, main .form-2 .form-element h2 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=index.css.map */
