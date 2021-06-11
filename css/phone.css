@@ -1,0 +1,65 @@
+*{
+    font-size: 1.5rem;
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* form1st page */
+#form-infix{
+    height: 13rem;
+    width: 48rem;
+}
+
+.postinput{
+    height: 12rem;
+    width: 48rem;
+}
+
+#primary-heading {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 9rem;
+    width: 17rem;
+    padding-bottom: 6rem;
+}
+
+.converter{
+    height: 29vh;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* split down */
+#split-down{
+    height: 15rem;
+    width:25rem;
+}
+
+/* form1 */
+#form1{
+    height: 13rem;
+    width: 48rem;
+}
+
+/* footer */
+#footer{
+    flex-direction: column;
+}
+
+.contact{
+    width: 100%;
+}
+
+#second-box{
+    align-items: center;
+}
+
+#third-box{
+    align-items: center;
+    padding-top: 1rem;
+}
+

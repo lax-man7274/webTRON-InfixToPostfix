@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* container section */
+#container{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* form1st page */
+#form-infix{
+    height: 11rem;
+    width: 90rem;
+}
+
+/* first-heading */
+#primary-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+ }
+
+/* first-second-container section */
+
+.converter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.converter a{
+    margin: 1rem;
+}
+
+
+.postinput{
+    height: 10rem;
+    width:90rem ;
+}
+
+/* split section */
+#split-down{
+    height: 9rem;
+    width: 40rem;
+}
+
+#first-container{
+    height: 40vh;
+    width: 100%;
+}
+
+#form1{
+    height: 11rem;
+    width: 90rem;
+}
+
+/* Footer section */
+#footer{
+    height: 56vh;
+    width: 100%;
+    display: flex;
+}
+.contact{
+    border-right: 1px solid white;
+    background-color: black;
+    color: white;
+    width: 33.34%;
+    padding: 1rem;
+}
+/* 1st box */
+#webTRON{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading-contact{
+    padding: 4rem;
+}
+
+#webtron-img{
+    margin: 2rem;
+    height: 12.5rem;
+    width: 25rem;
+}
+
+/* 2nd box */
+#second-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#second-box p{
+    padding: 1rem;
+}
+.features{
+    list-style-type: disclosure-closed;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* 3rd box */
+#third-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact-fillbox{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    width: 40rem;
+    margin: 1rem;
+    
+}
+
+#input-email{
+    height: 3.5rem;
+    width: 35rem;
+}
+
+#chat{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30rem;
+}
+
+#phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#phone ul{
+    margin: 1rem;
+}
+
+#phone ul li{
+    list-style-type: disclosure-closed;
+}
