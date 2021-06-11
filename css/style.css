@@ -154,4 +154,5 @@ html{
 
 #phone ul li{
     list-style-type: disclosure-closed;
+    padding-top: 1rem;
 }
