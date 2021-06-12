@@ -1,0 +1,115 @@
+<%- include("includes/head")%>
+    <!-- <link rel="stylesheet" media="screen and (max-width:1325px)" href="./css/phone.css" /> -->
+    <title>Infix to Postfix</title>
+    </head>
+
+    <body>
+        <!-- Messenger Chat Plugin Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Chat Plugin code -->
+        <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+
+        <header class="title">
+            <h1>INFIX TO POSTFIX CONVERTER</h1>
+        </header>
+        <main>
+            <form action="" class="form-1">
+                <div class="form-element">
+                    <h2>INSERT YOUR INFIX EXPRESSION HERE:</h2>
+                    <fieldset>
+                        <legend> Your Infix Expression </legend>
+                        <input type="text" required />
+                    </fieldset>
+                    <small class="learn-more infix">Learn about infix expression.</small>
+                    <div class="collapse collapse-infix hide-collapse" id="collapseInfix">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                        <div class="links">
+                            <a href="https://en.wikipedia.org/wiki/Infix_notation" target="_blank" rel="noopener noreferrer"><img src="images/wikiLogo.png" alt="wikiLogo"></a>
+                            <small class="hide-btn"><img src="images/upArrow.png" alt="upArrow"></small>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-element">
+                    <h2>SELECT SPLIT TYPE:</h2>
+                    <fieldset>
+                        <legend> Split Type </legend>
+                        <select name="splitMethode" id="splitMethode" required>
+                        <option value=""></option>
+                        <option value="laxman">Laxman</option>
+                        <option value="Pokhrel">Pokhrel</option>
+                    </select>
+
+                    </fieldset>
+                    <small class="learn-more splitMethod">Learn about split type.</small>
+                    <div class="collapse collapse-splitMethod hide-collapse" id="collapseSplitMethod">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                        <div class="links">
+                            <small class="hide-btn"><img src="images/upArrow.png" alt="upArrow"></small>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">See your result</button>
+            </form>
+            <div class="section-2">
+                <form action="" class="form-2">
+                    <div class="form-element">
+                        <h2>YOUR POSTFIX EXPRESSION IS:</h2>
+                        <fieldset>
+                            <legend> Your postfix expression: </legend>
+                            <input type="text" />
+                            <img src="images/copy-icon.png" alt="copy-icon">
+                        </fieldset>
+                        <small class="learn-more postfix">Learn about postfix expression.</small>
+                        <div class="collapse collapse-postfix hide-collapse" id="collapsePostfix">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                            <div class="links">
+                                <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation" target="_blank" rel="noopener noreferrer"><img src="images/wikiLogo.png" alt="wikiLogo"></a>
+                                <small class="hide-btn"><img src="images/upArrow.png" alt="upArrow"></small>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+        </main>
+
+        <!-- include footer -->
+        <%- include("includes/footer")%>
+
+
+
+
+
+            <script>
+                var chatbox = document.getElementById("fb-customer-chat");
+                chatbox.setAttribute("page_id", "100243378793004");
+                chatbox.setAttribute("attribution", "biz_inbox");
+                window.fbAsyncInit = function() {
+                    FB.init({
+                        xfbml: true,
+                        version: "v11.0",
+                    });
+                };
+
+                (function(d, s, id) {
+                    var js,
+                        fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                })(document, "script", "facebook-jssdk");
+            </script>
+            <script src="js/collapse.js"></script>
+
+    </body>
+
+    </html>
