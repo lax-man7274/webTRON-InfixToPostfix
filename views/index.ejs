@@ -1,6 +1,7 @@
 <%- include("includes/head")%>
     <!-- <link rel="stylesheet" media="screen and (max-width:1325px)" href="./css/phone.css" /> -->
-    <title>Infix to Postfix</title>
+    <title>
+        <%= pageTitle%>></title>
     </head>
 
     <body>
@@ -15,12 +16,12 @@
             <h1>INFIX TO POSTFIX CONVERTER</h1>
         </header>
         <main>
-            <form action="" class="form-1">
+            <form action="/convert-infix-to-postfix" method="POST" class="form-1">
                 <div class="form-element">
                     <h2>INSERT YOUR INFIX EXPRESSION HERE:</h2>
                     <fieldset>
                         <legend> Your Infix Expression </legend>
-                        <input type="text" required />
+                        <input type="text" name="infixExpression" <% if(isEvaluated===true){%>value="<%= infixExpresstion%>"<%}%> required />
                     </fieldset>
                     <small class="learn-more infix">Learn about infix expression.</small>
                     <div class="collapse collapse-infix hide-collapse" id="collapseInfix">
@@ -40,8 +41,8 @@
                         <legend> Split Type </legend>
                         <select name="splitMethode" id="splitMethode" required>
                         <option value=""></option>
-                        <option value="laxman">Laxman</option>
-                        <option value="Pokhrel">Pokhrel</option>
+                        <option value="0">Laxman</option>
+                        <option value="1">Pokhrel</option>
                     </select>
 
                     </fieldset>
@@ -63,8 +64,8 @@
                         <h2>YOUR POSTFIX EXPRESSION IS:</h2>
                         <fieldset>
                             <legend> Your postfix expression: </legend>
-                            <input type="text" />
-                            <img src="images/copy-icon.png" alt="copy-icon">
+                            <input type="text" name="postfixExpression" id='postfixExpression'<% if(isEvaluated===true){%>value="<%= postfixExpression%>"<%}%>/>
+                                    <img id="copy-button" src="images/copy-icon.png" alt="copy-icon">
                         </fieldset>
                         <small class="learn-more postfix">Learn about postfix expression.</small>
                         <div class="collapse collapse-postfix hide-collapse" id="collapsePostfix">
@@ -109,6 +110,7 @@
                 })(document, "script", "facebook-jssdk");
             </script>
             <script src="js/collapse.js"></script>
+            <script src="js/copy.js"></script>
 
     </body>
 

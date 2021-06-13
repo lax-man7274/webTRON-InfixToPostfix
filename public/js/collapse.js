@@ -1,8 +1,8 @@
 const learnMoreButtons = document.querySelectorAll('.learn-more');
 const collapseDivisions = document.querySelectorAll('.collapse');
 const hideButtons = document.querySelectorAll('.hide-btn');
-console.log(learnMoreButtons);
-console.log(collapseDivisions[0]);
+// console.log(learnMoreButtons);
+// console.log(collapseDivisions[0]);
 
 learnMoreButtons.forEach((learnMoreButton, index) => {
     learnMoreButton.addEventListener('click', (e) => {
