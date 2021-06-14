@@ -29,11 +29,12 @@ body {
 }
 
 main {
+    margin-top: 4rem;
     min-height: 60rem;
     .form-1 {
         // border:2px solid green;
         width: 100%;
-        height: 60rem;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -312,6 +313,7 @@ main {
                     font-size: 2rem;
                     fill: black;
                     margin: 0rem .5rem 0rem 1rem;
+
                     &:active {
                         border: none;
                         background-color: none;
@@ -319,6 +321,11 @@ main {
                     }
                     &:focus {
                         border: none;
+                        outline: none;
+                    }
+                    &:hover {
+                        border: none;
+                        background-color: none;
                         outline: none;
                     }
                 }
@@ -468,6 +475,8 @@ main {
     transform: translate(0%, 0%);
     display: flex;
     flex-direction: column;
+    background-color: white;
+    z-index: 10;
     .card {
         font-size: 1rem;
         line-height: 1.7rem;
@@ -509,4 +518,11 @@ main {
     .collapse {
         width: 30rem;
     }
+}
+
+.message{
+    position:fixed;
+    right:0;
+    bottom: 0;
+    border:1px solid red;
 }
