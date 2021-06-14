@@ -36,11 +36,12 @@ body {
 }
 
 main {
+  margin-top: 4rem;
   min-height: 60rem;
 }
 main .form-1 {
   width: 100%;
-  height: 60rem;
+  height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,6 +435,11 @@ main .form-2 .form-element fieldset select:hover {
   border: none;
   outline: none;
 }
+.footer .newsletter fieldset form input:hover {
+  border: none;
+  background-color: none;
+  outline: none;
+}
 .footer .newsletter fieldset form button {
   border: none;
   padding: 1rem;
@@ -600,6 +606,8 @@ main .form-2 .form-element h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: white;
+  z-index: 10;
 }
 .collapse .card {
   font-size: 1rem;
@@ -647,4 +655,10 @@ main .form-2 .form-element h2 {
   .collapse {
     width: 30rem;
   }
+}
+.message {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border: 1px solid red;
 }/*# sourceMappingURL=index.css.map */

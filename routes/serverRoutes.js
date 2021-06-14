@@ -6,5 +6,6 @@ const serverController = require('../controller/serverController');
 router.get('/', serverController.getIndex);
 router.post('/convert-infix-to-postfix', serverController.postConvertToPostfix);
 router.get('/convert-infix-to-postfix', serverController.getConvertToPostfix);
+router.post('/subscribe', serverController.postSubscribe);
 
 module.exports = router;
