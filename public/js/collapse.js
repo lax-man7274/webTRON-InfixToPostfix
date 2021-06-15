@@ -1,6 +1,8 @@
 const learnMoreButtons = document.querySelectorAll('.learn-more');
 const collapseDivisions = document.querySelectorAll('.collapse');
 const hideButtons = document.querySelectorAll('.hide-btn');
+ const messageField=document.querySelector('.message');
+console.log(messageField);
 // console.log(learnMoreButtons);
 // console.log(collapseDivisions[0]);
 
@@ -21,3 +23,19 @@ hideButtons.forEach((hideButton, index) => {
         }
     })
 })
+
+// while(messageField===null){
+//     console.log('inside while loop');
+//     messageField=document.querySelector('.message');
+//     if(messageField){
+//         messageField.setTimeout(()=>{
+//             messageField.classList.add('hide-message');
+//         },3000)
+//     }
+// }
+
+if(messageField){
+    setTimeout(()=>{
+        messageField.classList.add('hide-message');
+    },6000);
+}

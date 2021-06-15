@@ -68,7 +68,7 @@ module.exports= function infixToPostfixConversion(expression) {
           let y = precedence[`${stack[stackIndex - 1]}`];
           console.log("value of y is: ", y);
   
-          if (x < y) {
+          if (x <= y) {
             console.log("X Y ko IF bhitra chiro !!!!");
             let x = stack.pop();
             Q[qIndex] = x;

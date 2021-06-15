@@ -1,5 +1,5 @@
 module.exports = function splitString(expression, path) {
-        console.log("the expression fro split is ::", expression);
+        console.log("the expression for split is ::", expression);
         if (path == 0) {
             let content = expression.split("");
             console.log("Content:", content);
@@ -7,7 +7,7 @@ module.exports = function splitString(expression, path) {
         }
         if (path == 1) {
             console.log("-----//////// this is split function !!! /////////-----");
-            let regex = /[()*+-/]/g;
+            let regex = /[()*+-/^]/g;
             let content = [];
             let contentIndex = 0;
             let operators = expression.match(regex);
