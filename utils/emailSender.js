@@ -3,7 +3,7 @@ const nodeMailer = require('nodemailer');
 
 
 module.exports = class mailSender {
-    static sendMail(email,req,res) {
+    static sendMail(email) {
         const transporter = nodeMailer.createTransport({
             service: 'gmail',
             auth: {
@@ -17,16 +17,6 @@ module.exports = class mailSender {
             subject: 'Successfully subscribed.',
             html: `<h1>Thank you for subscribing to our news letter.</h1>`
         };
-        transporter.sendMail(mailOptions).then(() => {
-            req.flash('msg','Thankyou for subscribing our newsletter. Please check your mail.');
-            // console.log(req.flash('msg'));
-            console.log('session is',req.session);
-            res.redirect('/');
-            console.log('sent');
-        }).catch(err => {
-            console.log(err);
-            req.flash('msg','Error sending mail');
-            res.redirect('/');
-        });
+        return transporter.sendMail(mailOptions);
     }
 }

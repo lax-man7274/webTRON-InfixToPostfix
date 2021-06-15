@@ -1,14 +1,18 @@
-const getDb = require('../utils/database').getDb;
+const getDb = require("../utils/database").getDb;
 
 module.exports = class subscriptionEmails {
-    constructor(email) {
-        this.email = email;
-    }
-    save() {
+    static saveOneEmail(email) {
         const db = getDb();
-        db.collection('subscriptionEmails').insertOne(this).then(result => {
-        }).catch(err => {
-            console.log(err);
+        return db.collection("subscriptionEmails")
+            .insertOne({
+                email: email,
+            });
+    }
+
+    static findOneByEmail(email) {
+        const db = getDb();
+        return db.collection("subscriptionEmails").findOne({
+            email: email,
         });
     }
-}
+};

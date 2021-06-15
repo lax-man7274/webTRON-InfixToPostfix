@@ -1,7 +1,7 @@
 {
   "env": {
     "MONGO_URI": "mongodb+srv://laxman:YPmeFyGQAEViHzuG@cluster0.ds8mc.mongodb.net/infixToPostfixConverter?retryWrites=true&w=majority",
-    "AUTHOR_USER_ID": "webtron2021@gmail.com",
-    "AUTHOR_PASSWORD": "webTRON@2021@"
+    "AUTHOR_USER_ID": "webtron2021@gmail.com"
+    // "AUTHOR_PASSWORD": "webTRON@2021@"
   }
 }

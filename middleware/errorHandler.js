@@ -1,13 +1,15 @@
 exports.serverError = (err, req, res, next) => {
     if (err) {
         return res.render('error/500', {
-            pageTitle: 'Error'
+            pageTitle: 'Error',
+            flashMessages:[]
         })
     }
     next();
 }
 exports.pageNotFoundError = (req, res, next) => {
-    res.render('error/400', {
-        pageTitle: 'Page not found.'
+    res.render('error/404', {
+        pageTitle: 'Page not found.',
+        flashMessages:[]
     })
 }

@@ -14,7 +14,9 @@ module.exports = class evaluatedExpressions {
         db.collection('evaluatedExpressions').insertOne(this).then(result => {
             console.log('saved');
         }).catch(err => {
-            console.log(err);
+            const error = new Error(err);
+            error.httpStatus = 500;
+            next(err);
         });
     } 
 }
