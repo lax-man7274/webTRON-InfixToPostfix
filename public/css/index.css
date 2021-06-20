@@ -7,7 +7,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 body {
@@ -30,6 +30,7 @@ body {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
+
 .title h1 {
   font-size: 3.5rem;
   margin: 1rem;
@@ -39,6 +40,7 @@ main {
   margin-top: 4rem;
   min-height: 60rem;
 }
+
 main .form-1 {
   width: 100%;
   height: 20rem;
@@ -55,6 +57,7 @@ main .form-1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
 main .form-1 button {
   margin-left: 5rem;
   background: none;
@@ -68,8 +71,9 @@ main .form-1 button {
   color: #e4e4e4;
   cursor: pointer;
 }
+
 main .form-1 .form-element {
-  padding: 0.5rem;
+  padding: .5rem;
   margin-left: 5rem;
   width: 90%;
   min-height: 10rem;
@@ -88,48 +92,67 @@ main .form-1 .form-element {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
+
 main .form-1 .form-element h2 {
   font-size: 1.5rem;
 }
+
 main .form-1 .form-element small {
   color: #0362D1;
   font-size: 1.3rem;
   cursor: pointer;
 }
+
 main .form-1 .form-element fieldset {
   width: 80%;
   margin: 1rem 0rem 1rem 0rem;
-  height: 8rem;
+  min-height: 8rem;
   border: 2px solid black;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
+
 main .form-1 .form-element fieldset legend {
   font-size: 1.3rem;
   padding: 5px;
 }
+
 main .form-1 .form-element fieldset input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   width: 100%;
   height: 100%;
   background: none;
   border: none;
   font-size: 2rem;
   padding: 2px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0.8rem 1rem 0 1rem;
 }
+
 main .form-1 .form-element fieldset input:active {
   border: none;
   background-color: none;
   outline: none;
 }
+
 main .form-1 .form-element fieldset input:focus {
   border: none;
   outline: none;
 }
+
 main .form-1 .form-element fieldset select {
   width: 99%;
   height: 100%;
@@ -138,6 +161,7 @@ main .form-1 .form-element fieldset select {
   font-size: 2rem;
   padding: 2px;
 }
+
 main .section-2 {
   height: 45rem;
   display: -webkit-box;
@@ -154,6 +178,7 @@ main .section-2 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
 main .form-2 {
   margin-top: 3rem;
   width: 100%;
@@ -170,6 +195,7 @@ main .form-2 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
 main .form-2 button {
   margin-left: 5rem;
   background: none;
@@ -183,8 +209,9 @@ main .form-2 button {
   color: #e4e4e4;
   cursor: pointer;
 }
+
 main .form-2 .form-element {
-  padding: 0.5rem;
+  padding: .5rem;
   margin-left: 5rem;
   width: 90%;
   min-height: 10rem;
@@ -203,14 +230,17 @@ main .form-2 .form-element {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
+
 main .form-2 .form-element h2 {
   font-size: 1.5rem;
 }
+
 main .form-2 .form-element small {
   color: #0362D1;
   font-size: 1.3rem;
   cursor: pointer;
 }
+
 main .form-2 .form-element fieldset {
   width: 80%;
   margin: 1rem 0rem 1rem 0rem;
@@ -231,15 +261,18 @@ main .form-2 .form-element fieldset {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
+
 main .form-2 .form-element fieldset img {
   width: 4.5rem;
   height: 4.5rem;
   cursor: pointer;
 }
+
 main .form-2 .form-element fieldset legend {
   font-size: 1.3rem;
   padding: 5px;
 }
+
 main .form-2 .form-element fieldset input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -253,15 +286,18 @@ main .form-2 .form-element fieldset input {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 main .form-2 .form-element fieldset input:active {
   border: none;
   background-color: none;
   outline: none;
 }
+
 main .form-2 .form-element fieldset input:focus {
   border: none;
   outline: none;
 }
+
 main .form-2 .form-element fieldset select {
   width: 99%;
   height: 100%;
@@ -270,15 +306,18 @@ main .form-2 .form-element fieldset select {
   font-size: 2rem;
   padding: 2px;
 }
+
 main .form-2 .form-element fieldset select:active {
   border: none;
   background-color: none;
   outline: none;
 }
+
 main .form-2 .form-element fieldset select:focus {
   border: none;
   outline: none;
 }
+
 main .form-2 .form-element fieldset select:hover {
   border: none;
   outline: none;
@@ -289,6 +328,7 @@ main .form-2 .form-element fieldset select:hover {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
+  line-height: 1.4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,6 +342,7 @@ main .form-2 .form-element fieldset select:hover {
   margin-top: 2rem;
   color: #ececec;
 }
+
 .footer .line {
   width: 2px;
   height: 22rem;
@@ -310,6 +351,7 @@ main .form-2 .form-element fieldset select:hover {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 .footer .logo {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -329,13 +371,16 @@ main .form-2 .form-element fieldset select:hover {
           align-items: flex-start;
   margin: 2rem;
 }
+
 .footer .logo h2 {
   font-size: 2rem;
 }
+
 .footer .logo img {
   width: 23rem;
   height: 11rem;
 }
+
 .footer .contact {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -355,15 +400,16 @@ main .form-2 .form-element fieldset select:hover {
           align-items: flex-start;
   margin: 2rem;
 }
+
 .footer .contact p {
   font-size: 2.5rem;
 }
+
 .footer .contact ul {
   list-style: disc;
-  -webkit-transform: translateX(1.5rem);
-          transform: translateX(1.5rem);
   font-size: 1.5rem;
 }
+
 .footer .newsletter {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -383,6 +429,7 @@ main .form-2 .form-element fieldset select:hover {
           align-items: flex-start;
   height: 20rem;
 }
+
 .footer .newsletter fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,12 +445,14 @@ main .form-2 .form-element fieldset select:hover {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
+
 .footer .newsletter fieldset legend {
+  font-size: 1.3rem;
   padding: 5px;
 }
+
 .footer .newsletter fieldset form {
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,6 +462,7 @@ main .form-2 .form-element fieldset select:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .footer .newsletter fieldset form input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -423,23 +473,26 @@ main .form-2 .form-element fieldset select:hover {
   border: none;
   color: white;
   font-size: 2rem;
-  fill: black;
-  margin: 0rem 0.5rem 0rem 1rem;
+  margin: 0rem .5rem 0rem 1rem;
 }
+
 .footer .newsletter fieldset form input:active {
   border: none;
   background-color: none;
   outline: none;
 }
+
 .footer .newsletter fieldset form input:focus {
   border: none;
   outline: none;
 }
+
 .footer .newsletter fieldset form input:hover {
   border: none;
   background-color: none;
   outline: none;
 }
+
 .footer .newsletter fieldset form button {
   border: none;
   padding: 1rem;
@@ -449,23 +502,28 @@ main .form-2 .form-element fieldset select:hover {
   color: #e4e4e4;
   cursor: pointer;
 }
+
 .footer .newsletter fieldset form button img {
   width: 4rem;
   height: 4rem;
 }
+
 .footer .newsletter fieldset form button:active {
   border: none;
   background-color: none;
   outline: none;
 }
+
 .footer .newsletter fieldset form button:focus {
   border: none;
   outline: none;
 }
+
 .footer .newsletter fieldset form button:hover {
   border: none;
   outline: none;
 }
+
 .footer .newsletter .contact-details {
   margin-top: 1rem;
   display: -webkit-box;
@@ -481,14 +539,26 @@ main .form-2 .form-element fieldset select:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 .footer .newsletter .contact-details p {
-  margin: 0.5rem 0rem 0.5rem 0rem;
+  margin: .5rem 0rem .5rem 0rem;
   font-size: 1.5rem;
 }
+
+.footer .newsletter .contact-details p a {
+  text-decoration: none;
+  color: white;
+}
+
 .footer .newsletter .contact-details ul {
   -webkit-transform: translateX(1.5rem);
           transform: translateX(1.5rem);
   font-size: 1.5rem;
+}
+
+.footer .newsletter .contact-details ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 1080px) {
@@ -530,17 +600,16 @@ main .form-2 .form-element fieldset select:hover {
     min-width: 40rem;
   }
 }
+
 @media screen and (max-width: 500px) {
   html {
     font-size: 50%;
   }
-
   .title h1 {
     font-size: 2rem;
     margin: 1rem;
     font-weight: bold;
   }
-
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -578,12 +647,12 @@ main .form-2 .form-element fieldset select:hover {
             align-items: flex-start;
     min-width: 20rem;
   }
-
   main .form-1 .form-element h2,
-main .form-2 .form-element h2 {
+  main .form-2 .form-element h2 {
     font-size: 1.5rem;
   }
 }
+
 .collapse {
   position: relative;
   margin-top: 1rem;
@@ -591,10 +660,10 @@ main .form-2 .form-element h2 {
   border: 1px solid gray;
   -webkit-box-shadow: 1px 1px 1px #a3a3a3;
           box-shadow: 1px 1px 1px #a3a3a3;
-  padding: 0.5rem;
+  padding: .5rem;
   border-radius: 1rem;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   opacity: 1;
   pointer-events: all;
   -webkit-transform: translate(0%, 0%);
@@ -609,10 +678,12 @@ main .form-2 .form-element h2 {
   background-color: white;
   z-index: 10;
 }
+
 .collapse .card {
   font-size: 1rem;
   line-height: 1.7rem;
 }
+
 .collapse .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,19 +695,23 @@ main .form-2 .form-element h2 {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
 .collapse .links a {
   margin-right: 2rem;
   border-radius: 50%;
 }
+
 .collapse .links a img {
   height: 2.5rem;
   width: 2.5rem;
 }
+
 .collapse .links small {
   margin-left: 1rem;
   margin-right: 1rem;
   text-decoration: none;
 }
+
 .collapse .links small img {
   height: 1.5rem;
   width: 1.5rem;
@@ -647,8 +722,8 @@ main .form-2 .form-element h2 {
           transform: translate(0%, -15%);
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 @media screen and (max-width: 902px) {
@@ -656,6 +731,7 @@ main .form-2 .form-element h2 {
     width: 30rem;
   }
 }
+
 .message {
   position: fixed;
   right: 2%;
@@ -683,6 +759,7 @@ main .form-2 .form-element h2 {
   font-size: 1.5rem;
   color: white;
 }
+
 .message i {
   margin: 0rem 1rem 0rem 1rem;
   color: #f02424;
@@ -710,12 +787,14 @@ small {
   right: 5%;
   z-index: 100;
 }
+
 .git-link a i {
   color: #133b69;
   -webkit-box-shadow: 0px 2px 2px 2px #0c0c0c;
           box-shadow: 0px 2px 2px 2px #0c0c0c;
   border-radius: 50%;
 }
+
 .git-link a i:hover {
   -webkit-box-shadow: 0px 1px 1px 1px #0c0c0c;
           box-shadow: 0px 1px 1px 1px #0c0c0c;
@@ -739,6 +818,7 @@ small {
   background-color: #121212;
   color: red;
 }
+
 .server-error img {
   margin: 1rem;
   height: 20rem;
@@ -763,8 +843,10 @@ small {
   background-color: #121212;
   color: red;
 }
+
 .page-not-found img {
   margin: 1rem;
   height: 20rem;
   width: 40rem;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */
