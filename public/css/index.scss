@@ -1,3 +1,7 @@
+// Import Spinner
+@import "spinner";
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +14,9 @@ html {
 }
 
 body {
+    height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .title {
@@ -108,7 +114,7 @@ main {
 
                     &:active {
                         border: none;
-                        background-color: none;
+                        background: none;
                         outline: none;
                     }
 
@@ -329,6 +335,7 @@ main {
         height: 20rem;
 
         fieldset {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -342,20 +349,25 @@ main {
             }
 
             form {
+                position: absolute;
+                left:0;
+                top:-2rem;
                 width: 100%;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                
 
                 input {
                     flex: 1;
                     height: 100%;
-                    background: none;
+                    background:transparent;
                     outline: none;
                     border: none;
                     color: white;
                     font-size: 2rem;
                     margin: 0rem .5rem 0rem 1rem;
+                   
 
                     &:active {
                         border: none;
@@ -373,6 +385,7 @@ main {
                         background-color: none;
                         outline: none;
                     }
+                    
                 }
 
                 button {
@@ -476,7 +489,7 @@ main {
 
 @media screen and (max-width:500px) {
     html {
-        font-size: 50%
+        font-size: 55%
     }
 
     .title {
@@ -490,6 +503,8 @@ main {
     .footer {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        padding:0 2rem;
 
         .line {
             height: 2px;
@@ -499,7 +514,8 @@ main {
             margin: 3rem 0rem 3rem 0rem;
             align-items: flex-start;
             // border:1px solid red;
-            min-width: 25rem;
+            min-width:auto;
+            width: 100%;
         }
 
         .logo {
@@ -510,14 +526,15 @@ main {
 
         .contact {
             align-items: flex-start;
-            // border:1px solid red;
+          
             min-width: 20rem;
         }
 
         .newsletter {
             align-items: flex-start;
-            // border:1px solid red;
-            min-width: 20rem;
+            width: 80%;
+            
+            
         }
     }
 
@@ -642,6 +659,7 @@ small {
 }
 
 .git-link {
+    display: none;
 
     a {
         position: fixed;
@@ -695,4 +713,9 @@ small {
         width: 40rem;
     }
 
+}
+
+
+input:-internal-autofill-selected{
+    background-color: transparent !important;
 }

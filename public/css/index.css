@@ -1,3 +1,356 @@
+#spinner-wrapper {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cssload-container * {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.cssload-container {
+  margin: 45px auto 0 auto;
+  max-width: 1258px;
+}
+
+.cssload-container ul li {
+  list-style: none;
+}
+
+.cssload-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -o-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cssload-flex-container li {
+  padding: 23px;
+  height: 225px;
+  width: 225px;
+  margin: 68px 45px;
+  position: relative;
+  text-align: center;
+}
+
+.cssload-loading-center {
+  display: inline-block;
+  position: absolute;
+  background: #133b69;
+  height: 68px;
+  width: 68px;
+  left: 81px;
+  top: 83px;
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  animation: pulse 1.15s ease infinite;
+  -o-animation: pulse 1.15s ease infinite;
+  -ms-animation: pulse 1.15s ease infinite;
+  -webkit-animation: pulse 1.15s ease infinite;
+  -moz-animation: pulse 1.15s ease infinite;
+}
+
+.cssload-loading {
+  display: inline-block;
+  position: relative;
+  width: 169px;
+  height: 169px;
+  margin-top: 7px;
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+
+.cssload-loading:after, .cssload-loading:before {
+  position: absolute;
+  content: '';
+  height: 23px;
+  width: 23px;
+  display: block;
+  top: 0;
+  background: #133b69;
+  border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  animation-delay: -0.5 0.75s;
+  -o-animation-delay: -0.5 0.75s;
+  -ms-animation-delay: -0.5 0.75s;
+  -webkit-animation-delay: -0.5 0.75s;
+  -moz-animation-delay: -0.5 0.75s;
+}
+
+.cssload-loading:after {
+  right: 0;
+  animation: square-tr 2.3s ease infinite;
+  -o-animation: square-tr 2.3s ease infinite;
+  -ms-animation: square-tr 2.3s ease infinite;
+  -webkit-animation: square-tr 2.3s ease infinite;
+  -moz-animation: square-tr 2.3s ease infinite;
+  animation-delay: 0.143 0.75s;
+  -o-animation-delay: 0.143 0.75s;
+  -ms-animation-delay: 0.143 0.75s;
+  -webkit-animation-delay: 0.143 0.75s;
+  -moz-animation-delay: 0.143 0.75s;
+}
+
+.cssload-loading:before {
+  animation: square-tl 2.3s ease infinite;
+  -o-animation: square-tl 2.3s ease infinite;
+  -ms-animation: square-tl 2.3s ease infinite;
+  -webkit-animation: square-tl 2.3s ease infinite;
+  -moz-animation: square-tl 2.3s ease infinite;
+  animation-delay: 0.143 0.75s;
+  -o-animation-delay: 0.143 0.75s;
+  -ms-animation-delay: 0.143 0.75s;
+  -webkit-animation-delay: 0.143 0.75s;
+  -moz-animation-delay: 0.143 0.75s;
+}
+
+.cssload-loading.cssload-two {
+  position: relative;
+  top: -180px;
+}
+
+.cssload-loading.cssload-two:after, .cssload-loading.cssload-two:before {
+  bottom: 0;
+  top: initial;
+}
+
+.cssload-loading.cssload-two:after {
+  animation: square-br 2.3s ease infinite;
+  -o-animation: square-br 2.3s ease infinite;
+  -ms-animation: square-br 2.3s ease infinite;
+  -webkit-animation: square-br 2.3s ease infinite;
+  -moz-animation: square-br 2.3s ease infinite;
+  animation-direction: reverse;
+  -o-animation-direction: reverse;
+  -ms-animation-direction: reverse;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+}
+
+.cssload-loading.cssload-two:before {
+  animation: square-bl 2.3s ease infinite;
+  -o-animation: square-bl 2.3s ease infinite;
+  -ms-animation: square-bl 2.3s ease infinite;
+  -webkit-animation: square-bl 2.3s ease infinite;
+  -moz-animation: square-bl 2.3s ease infinite;
+  animation-direction: reverse;
+  -o-animation-direction: reverse;
+  -ms-animation-direction: reverse;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+}
+
+@keyframes square-tl {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(0, 140.5px);
+            transform: translate(0, 140.5px);
+  }
+  50% {
+    -webkit-transform: translate(140.5px, 140.5px);
+            transform: translate(140.5px, 140.5px);
+  }
+  75% {
+    -webkit-transform: translate(140.5px, 0);
+            transform: translate(140.5px, 0);
+  }
+}
+
+@-webkit-keyframes square-tl {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(0, 140.5px);
+  }
+  50% {
+    -webkit-transform: translate(140.5px, 140.5px);
+  }
+  75% {
+    -webkit-transform: translate(140.5px, 0);
+  }
+}
+
+@keyframes square-bl {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(0, -140.5px);
+            transform: translate(0, -140.5px);
+  }
+  50% {
+    -webkit-transform: translate(140.5px, -140.5px);
+            transform: translate(140.5px, -140.5px);
+  }
+  75% {
+    -webkit-transform: translate(140.5px, 0);
+            transform: translate(140.5px, 0);
+  }
+}
+
+@-webkit-keyframes square-bl {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(0, -140.5px);
+  }
+  50% {
+    -webkit-transform: translate(140.5px, -140.5px);
+  }
+  75% {
+    -webkit-transform: translate(140.5px, 0);
+  }
+}
+
+@keyframes square-tr {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(-140.5px, 0);
+            transform: translate(-140.5px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-140.5px, 140.5px);
+            transform: translate(-140.5px, 140.5px);
+  }
+  75% {
+    -webkit-transform: translate(0, 140.5px);
+            transform: translate(0, 140.5px);
+  }
+}
+
+@-webkit-keyframes square-tr {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(-140.5px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-140.5px, 140.5px);
+  }
+  75% {
+    -webkit-transform: translate(0, 140.5px);
+  }
+}
+
+@keyframes square-br {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(-140.5px, 0);
+            transform: translate(-140.5px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-140.5px, -140.5px);
+            transform: translate(-140.5px, -140.5px);
+  }
+  75% {
+    -webkit-transform: translate(0, -140.5px);
+            transform: translate(0, -140.5px);
+  }
+}
+
+@-webkit-keyframes square-br {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(-140.5px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-140.5px, -140.5px);
+  }
+  75% {
+    -webkit-transform: translate(0, -140.5px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    -webkit-transform: scale(inherit) rotate(45deg);
+            transform: scale(inherit) rotate(45deg);
+  }
+  75% {
+    -webkit-transform: scale(0.25) rotate(45deg);
+            transform: scale(0.25) rotate(45deg);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0%, 100% {
+    -webkit-transform: scale(inherit) rotate(45deg);
+  }
+  75% {
+    -webkit-transform: scale(0.25) rotate(45deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +364,9 @@ html {
 }
 
 body {
+  height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .title {
@@ -144,7 +499,7 @@ main .form-1 .form-element fieldset input {
 
 main .form-1 .form-element fieldset input:active {
   border: none;
-  background-color: none;
+  background: none;
   outline: none;
 }
 
@@ -431,6 +786,7 @@ main .form-2 .form-element fieldset select:hover {
 }
 
 .footer .newsletter fieldset {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,6 +808,9 @@ main .form-2 .form-element fieldset select:hover {
 }
 
 .footer .newsletter fieldset form {
+  position: absolute;
+  left: 0;
+  top: -2rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,7 +827,7 @@ main .form-2 .form-element fieldset select:hover {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
-  background: none;
+  background: transparent;
   outline: none;
   border: none;
   color: white;
@@ -603,7 +962,7 @@ main .form-2 .form-element fieldset select:hover {
 
 @media screen and (max-width: 500px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
   .title h1 {
     font-size: 2rem;
@@ -618,6 +977,10 @@ main .form-2 .form-element fieldset select:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0 2rem;
   }
   .footer .line {
     height: 2px;
@@ -627,7 +990,8 @@ main .form-2 .form-element fieldset select:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    min-width: 25rem;
+    min-width: auto;
+    width: 100%;
   }
   .footer .logo {
     -webkit-box-align: start;
@@ -645,7 +1009,7 @@ main .form-2 .form-element fieldset select:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    min-width: 20rem;
+    width: 80%;
   }
   main .form-1 .form-element h2,
   main .form-2 .form-element h2 {
@@ -781,6 +1145,10 @@ small {
   color: #a01515;
 }
 
+.git-link {
+  display: none;
+}
+
 .git-link a {
   position: fixed;
   top: 5%;
@@ -848,5 +1216,9 @@ small {
   margin: 1rem;
   height: 20rem;
   width: 40rem;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
 }
 /*# sourceMappingURL=index.css.map */
