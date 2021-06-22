@@ -40,7 +40,7 @@ app.use(serverRoutes);
 
 app.use(errorHandler.pageNotFoundError);
 app.use(errorHandler.serverError);
-// const PORT=process.env.PORT || 4000;
+
 mongoConnect(() => {
   app.listen(process.env.PORT || 4000, () => {
     console.log("listening to PORT: ", 4000);

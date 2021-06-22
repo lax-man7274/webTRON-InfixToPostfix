@@ -1,62 +1,70 @@
 <%- include("includes/head")%>
+    <!-- link Font awesome -->
+    <script src="https://kit.fontawesome.com/bd1a7bd853.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" media="screen and (max-width:1325px)" href="./css/phone.css" /> -->
     <title>
         <%= pageTitle%>
     </title>
     </head>
- 
+
     <body>
-        <!-- Messenger Chat Plugin Code -->
-        <div id="fb-root"></div>
+        <%- include("includes/spinner") %>
 
-        <!-- Your Chat Plugin code -->
-        <div id="fb-customer-chat" class="fb-customerchat"></div>
-        <div class="git-link"><a href="https://github.com/lax-man7274/webTRON-InfixToPostfix.git" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-4x"></i></a></div>
-        <% if(message.length>0){%>
+            <!-- Messenger Chat Plugin Code -->
+            <div id="fb-root"></div>
 
-            <div class='message'>
-                <i class="fas fa-bell fa-2x"></i>
-                <p>
-                    <%= message%>
-                </p>
-                <!-- <img src="images/rightArrow.png" alt="rightArrow"> -->
-            </div>
-            <%}%>
-         
+            <!-- Your Chat Plugin code -->
+            <div id="fb-customer-chat" class="fb-customerchat"></div>
+            <div class="git-link"><a href="https://github.com/lax-man7274/webTRON-InfixToPostfix.git" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-github fa-4x"></i></a></div>
+            <% if(message.length>0){%>
 
-                <header class="title">
-                    <h1>INFIX TO POSTFIX CONVERTER</h1>
-                </header>
-                <main>
-                    <form action="/convert-infix-to-postfix" method="POST" class="form-1">
-                        <div class="form-element">
-                            <h2>INSERT YOUR INFIX EXPRESSION HERE:</h2>
-                            <fieldset>
-                                <legend> Your Infix Expression </legend>
-                                <input type="text" name="infixExpression" <% if(isEvaluated===true){%>value="<%=
-                                    infixExpresstion%>"<%}%> required />
-                            </fieldset>
-                            <small class="learn-more infix">Learn about infix expression.</small>
-                            <div class="collapse collapse-infix hide-collapse" id="collapseInfix">
-                                <div class="card card-body">
-                                    <p> The traditional method of our writing of mathematical expressions is called as
-                                        the
-                                        infix expressions. It is of the form 
-                                           <b>(operand operator operand)</b> . As the name suggests, here the operator is fixed inside
-                                                    between
-                                                    the operands. e.g. A+B here the plus operator is placed inside
-                                                    between
-                                                    the two operators, (A*B)/Q.</p>
+                <div class='message'>
+                    <i class="fas fa-bell fa-2x"></i>
+                    <p>
+                        <%= message%>
+                    </p>
+                    <!-- <img src="images/rightArrow.png" alt="rightArrow"> -->
+                </div>
+                <%}%>
+
+
+                    <header class="title">
+                        <h1>INFIX TO POSTFIX CONVERTER</h1>
+                    </header>
+                    <main>
+                        <form action="/convert-infix-to-postfix" method="POST" class="form-1">
+                            <div class="form-element">
+                                <h2>INSERT YOUR INFIX EXPRESSION HERE:</h2>
+                                <fieldset>
+                                    <legend> Your Infix Expression </legend>
+                                    <input type="text" name="infixExpression" <% if(isEvaluated===true){%>value="<%=
+                                        infixExpresstion%>"<%}%> required />
+                                </fieldset>
+                                <small class="learn-more infix">Learn about infix expression.</small>
+                                <div class="collapse collapse-infix hide-collapse" id="collapseInfix">
+                                    <div class="card card-body">
+                                        <p> The traditional method of our writing of mathematical expressions is called
+                                            as
+                                            the
+                                            infix expressions. It is of the form
+                                            <b>(operand operator operand)</b> . As the name suggests, here the operator
+                                            is fixed inside
+                                            between
+                                            the operands. e.g. A+B here the plus operator is placed inside
+                                            between
+                                            the two operators, (A*B)/Q.
+                                        </p>
+                                    </div>
+                                    <div class="links">
+                                        <a href="https://en.wikipedia.org/wiki/Infix_notation" target="_blank"
+                                            rel="noopener noreferrer"><img src="images/wikiLogo.png" alt="wikiLogo"></a>
+                                        <small class="hide-btn"><img src="images/upArrow.png" alt="upArrow"></small>
+                                    </div>
+
                                 </div>
-                                <div class="links">
-                                    <a href="https://en.wikipedia.org/wiki/Infix_notation" target="_blank"
-                                        rel="noopener noreferrer"><img src="images/wikiLogo.png" alt="wikiLogo"></a>
-                                    <small class="hide-btn"><img src="images/upArrow.png" alt="upArrow"></small>
-                                </div>
-
                             </div>
-                        </div>
-                        <!-- <div class="form-element">
+                            <!-- <div class="form-element">
                     <h2>SELECT SPLIT TYPE:</h2>
                     <fieldset>
                         <legend> Split Type </legend>
@@ -77,39 +85,45 @@
                         </div>
                     </div>
                 </div> -->
-                        <button type="submit">Convert</button>
-                    </form>
-                    <div class="section-2">
-                        <form action="" class="form-2">
-                            <div class="form-element">
-                                <h2>YOUR POSTFIX EXPRESSION IS:</h2>
-                                <fieldset>
-                                    <legend> Your postfix expression: </legend>
-                                    <input type="text" name="postfixExpression" id='postfixExpression' <%
-                                        if(isEvaluated===true){%>value="<%= postfixExpression%>"<%}%>/>
-                                            <img id="copy-button" src="images/copy-icon.png" alt="copy-icon"
-                                                title="Copy">
-                                </fieldset>
-                                <small class="learn-more postfix">Learn about postfix expression.</small>
-                                <div class="collapse collapse-postfix hide-collapse" id="collapsePostfix">
-                                    <div class="card card-body">
-                                        Postfix: An expression is called the postfix expression if the operator appears
-                                        in the expression after the operands. Simply of the form <b>(operand1 operand2
-                                        operator)</b>. Given a Prefix expression, convert it into a Postfix expression
-                                    </div>
-                                    <div class="links">
-                                        <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation" target="_blank"
-                                            rel="noopener noreferrer"><img src="images/wikiLogo.png" alt="wikiLogo"></a>
-                                        <small class="hide-btn"><img src="images/upArrow.png" alt="upArrow"></small>
+                            <button type="submit">Convert</button>
+                        </form>
+                        <div class="section-2">
+                            <form action="" class="form-2">
+                                <div class="form-element">
+                                    <h2>YOUR POSTFIX EXPRESSION IS:</h2>
+                                    <fieldset>
+                                        <legend> Your postfix expression: </legend>
+                                        <input type="text" name="postfixExpression" id='postfixExpression' <%
+                                            if(isEvaluated===true){%>value="<%= postfixExpression%>"<%}%>/>
+                                                <img id="copy-button" src="images/copy-icon.png" alt="copy-icon"
+                                                    title="Copy">
+                                    </fieldset>
+                                    <small class="learn-more postfix">Learn about postfix expression.</small>
+                                    <div class="collapse collapse-postfix hide-collapse" id="collapsePostfix">
+                                        <div class="card card-body">
+                                            Postfix: An expression is called the postfix expression if the operator
+                                            appears
+                                            in the expression after the operands. Simply of the form <b>(operand1
+                                                operand2
+                                                operator)</b>. Given a Prefix expression, convert it into a Postfix
+                                            expression
+                                        </div>
+                                        <div class="links">
+                                            <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation"
+                                                target="_blank" rel="noopener noreferrer"><img src="images/wikiLogo.png"
+                                                    alt="wikiLogo"></a>
+                                            <small class="hide-btn"><img src="images/upArrow.png" alt="upArrow"></small>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
-                </main>
+                            </form>
+                    </main>
 
-                <!-- include footer -->
-                <%- include("includes/footer")%>
-                
-                <script src="js/collapse.js"></script>
+                    <!-- include footer -->
+                    <%- include("includes/footer")%>
+
+                        <script src="js/collapse.js"></script>
+                        <script src="js/client.js"></script>
     </body>
+
     </html>
