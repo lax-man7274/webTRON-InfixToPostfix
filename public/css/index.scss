@@ -272,8 +272,9 @@ main {
     background: #121212;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    // align-items: center;
     margin-top: 2rem;
+    padding: 5rem 1rem 1rem 1rem;
     color: rgb(236, 236, 236);
 
     .line {
@@ -290,9 +291,9 @@ main {
         height: 20rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        // justify-content: space-around;
         align-items: flex-start;
-        margin: 2rem;
+        margin:0 2rem;
 
         h2 {
             font-size: 2rem;
@@ -312,15 +313,19 @@ main {
         justify-content: space-around;
         align-items: flex-start;
         // border:1px solid red;
-        margin: 2rem;
+        margin:0 2rem;
 
         p {
             font-size: 2.5rem;
         }
 
         ul {
-            list-style: disc;
+            list-style:none;
             font-size: 1.5rem;
+            
+        }
+        li{
+            margin:0.5rem 0;
             
         }
     }
@@ -339,7 +344,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 7rem;
+            min-height: 7rem;
             width: 100%;
             transition: all 1s ease;
 
@@ -361,6 +366,7 @@ main {
                 input {
                     flex: 1;
                     height: 100%;
+                    width: 100%;
                     background:transparent;
                     outline: none;
                     border: none;
@@ -440,12 +446,20 @@ main {
             }
 
             ul {
-                transform: translateX(1.5rem);
+                // transform: translateX(1.5rem);
                 font-size: 1.5rem;
-                li a{
-                    text-decoration: none;
-                    color:white;
-                }
+                list-style: none;
+                li{
+                    margin: 0.5rem 0;
+
+                    a{
+                        text-decoration: none;
+                        color:white;
+                        .fa-phone{
+                            transform: rotate(90deg);
+                        }
+                    }
+                } 
             }
         }
     }
@@ -455,6 +469,7 @@ main {
     .footer {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         .line {
             height: 2px;
@@ -504,7 +519,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding:0 2rem;
+      
 
         .line {
             height: 2px;
@@ -532,7 +547,8 @@ main {
 
         .newsletter {
             align-items: flex-start;
-            width: 80%;
+            width: 95%;
+            min-width:auto;
             
             
         }
@@ -716,6 +732,10 @@ small {
 }
 
 
-input:-internal-autofill-selected{
-    background-color: transparent !important;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
 }

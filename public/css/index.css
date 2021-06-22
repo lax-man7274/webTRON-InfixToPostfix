@@ -691,10 +691,8 @@ main .form-2 .form-element fieldset select:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 2rem;
+  padding: 5rem 1rem 1rem 1rem;
   color: #ececec;
 }
 
@@ -719,12 +717,10 @@ main .form-2 .form-element fieldset select:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 2rem;
+  margin: 0 2rem;
 }
 
 .footer .logo h2 {
@@ -753,7 +749,7 @@ main .form-2 .form-element fieldset select:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 2rem;
+  margin: 0 2rem;
 }
 
 .footer .contact p {
@@ -761,8 +757,12 @@ main .form-2 .form-element fieldset select:hover {
 }
 
 .footer .contact ul {
-  list-style: disc;
+  list-style: none;
   font-size: 1.5rem;
+}
+
+.footer .contact li {
+  margin: 0.5rem 0;
 }
 
 .footer .newsletter {
@@ -796,7 +796,7 @@ main .form-2 .form-element fieldset select:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 7rem;
+  min-height: 7rem;
   width: 100%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -827,6 +827,7 @@ main .form-2 .form-element fieldset select:hover {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
+  width: 100%;
   background: transparent;
   outline: none;
   border: none;
@@ -910,14 +911,22 @@ main .form-2 .form-element fieldset select:hover {
 }
 
 .footer .newsletter .contact-details ul {
-  -webkit-transform: translateX(1.5rem);
-          transform: translateX(1.5rem);
   font-size: 1.5rem;
+  list-style: none;
+}
+
+.footer .newsletter .contact-details ul li {
+  margin: 0.5rem 0;
 }
 
 .footer .newsletter .contact-details ul li a {
   text-decoration: none;
   color: white;
+}
+
+.footer .newsletter .contact-details ul li a .fa-phone {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 @media screen and (max-width: 1080px) {
@@ -929,6 +938,9 @@ main .form-2 .form-element fieldset select:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer .line {
     height: 2px;
@@ -980,7 +992,6 @@ main .form-2 .form-element fieldset select:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 0 2rem;
   }
   .footer .line {
     height: 2px;
@@ -1009,7 +1020,8 @@ main .form-2 .form-element fieldset select:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 80%;
+    width: 95%;
+    min-width: auto;
   }
   main .form-1 .form-element h2,
   main .form-2 .form-element h2 {
@@ -1218,7 +1230,12 @@ small {
   width: 40rem;
 }
 
-input:-internal-autofill-selected {
-  background-color: transparent !important;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
 }
 /*# sourceMappingURL=index.css.map */
